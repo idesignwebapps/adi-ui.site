@@ -1,0 +1,740 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------------------
+ END OF RESET
+ ------------------------------------------------------ */
+
+/* ------------------------------------------------------
+ COLORS USED
+ #008037 : Forest Green
+ #f2f3f7 : Whitesmoke
+ #3a0d42e1 : Dark Magenta
+ #ffffff : White
+ #000000 : Black
+ ------------------------------------------------------ */
+
+/* ------------------------------------------------------
+ START OF STYLE.CSS
+ ------------------------------------------------------ */
+
+/* ------------------------------------------------------
+ GENERAL LAYOUT STYLING
+ ------------------------------------------------------ */
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lato', 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    background-color: #008037;
+}
+
+h1 {
+    display: none;
+}
+
+address {
+    font-size: 1.4rem;
+    display: block;
+    color: #f2f3f7;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1.5em;
+    text-align: right;
+    text-shadow: 1px 1px #000000;
+    background-color: #008037;
+}
+
+header {
+    background-color: #f2f3f7;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header>img {
+    margin: 3rem 0 3rem 3rem;
+}
+
+header>h2 {
+    float: right;
+    margin-top: 4rem;
+    margin-right: 3rem;
+}
+
+/* ------------------------------------------------------
+ NAVIGATION STYLING
+ ------------------------------------------------------ */
+
+nav {
+    padding: 0 1em 0 3em;
+    text-align: center;
+    background-color: #008037;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 0.6em;
+    margin-right: 1.3rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li:hover {
+    box-shadow: inset 7em 0 0 0 rgb(255, 255, 255);
+}
+
+nav li:hover a {
+    color: #008037;
+}
+
+nav li a.active {
+    font-weight: 800;
+    color: #ffffff;
+}
+
+nav li:hover a.active {
+    color: #008037;
+}
+
+/* ------------------------------------------------------
+ HEADING STYLING
+ ------------------------------------------------------ */
+
+header h2 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', 'Lato', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    text-transform: capitalize;
+    line-height: 1.3;
+    margin-top: 2em;
+}
+
+/* ------------------------------------------------------
+ INDEX PAGE GENERAL STYLING
+ ------------------------------------------------------ */
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes pan-image {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+#wrapper-index #banner>h3, #wrapper-index #banner>p {
+    opacity: 0;
+    filter: blur(4px);
+}
+
+#wrapper-index>#banner {
+    display: block;
+    padding: 7rem 4rem 7rem 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/grocery-contact.jpg');
+    background-size: 150%;
+    animation: pan-image 15s linear infinite;
+}
+
+#wrapper-index #banner>h3 {
+    font-family: 'Montserrat', 'Lato', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    width: 11em;
+    font-size: 3rem;
+    padding: 1rem 2rem 1rem 8rem;
+    background-color: rgba(58, 13, 66, 0.882);
+    line-height: 1.5;
+    animation: fade-in 1s 0.3s forwards;
+}
+
+#wrapper-index #banner>p {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1.5rem;
+    width: 22em;
+    padding: 0 2rem 2rem 8rem;
+    background-color: rgba(58, 13, 66, 0.884);
+    animation: fade-in 1s 0.7s forwards;
+}
+
+#wrapper-index #banner>p>a {
+    text-decoration: underline;
+}
+
+#wrapper-index section {
+    color: #ffffff;
+    display: inline-block;
+    padding: 5em;
+}
+
+#wrapper-index section h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+#wrapper-index section p {
+    font-size: 1.5rem;
+    margin-top: 1em;
+    line-height: 1.4;
+}
+
+#wrapper-index section:nth-of-type(even) figure {
+    float: right;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+#wrapper-index section:nth-of-type(even) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/frozen-food.jpg');
+}
+
+#wrapper-index section:nth-of-type(odd) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/cabbage-bg.jpg');
+}
+
+#wrapper-index section:nth-of-type(odd) figure {
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* ------------------------------------------------------
+ GROCERIES PAGE GENERAL STYLING
+ ------------------------------------------------------ */
+
+#wrapper-groceries {
+    display: grid;
+    grid-gap: 0.8px;
+    grid-auto-rows: minmax(140px, auto);
+    background-color: #ffffff;
+}
+
+#wrapper-groceries section {
+    padding: 10px 10px 10px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#wrapper-groceries section:hover {
+    background-size: 150%;
+    animation: pan-image 15s linear infinite;
+}
+
+#wrapper-groceries section h3 {
+    font-family: 'Montserrat', 'Lato', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    font-size: 2.3rem;
+    margin-top: 0.2rem;
+}
+
+#wrapper-groceries section h3+p {
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+}
+
+#wrapper-groceries section h3+p+p {
+    font-size: 1rem;
+    margin-top: 0.6rem;
+}
+
+#wrapper-groceries section:nth-of-type(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('../images/fresh-food.jpg');
+    background-position: bottom left;
+    color: #ffffff;
+}
+
+#wrapper-groceries section:nth-of-type(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('../images/household.jpg');
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper-groceries section:nth-of-type(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('../images/drinks.jpg');
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper-groceries section:nth-of-type(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../images/health-beauty.jpg');
+    color: #ffffff;
+}
+
+#wrapper-groceries section:nth-of-type(5) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../images/frozen-food.jpg');
+    color: #ffffff;
+}
+
+#wrapper-groceries section:nth-of-type(6) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../images/call-us.jpg');
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper-groceries section:nth-of-type(2) h3,
+#wrapper-groceries section:nth-of-type(3) h3 {
+    margin-top: auto;
+}
+
+#wrapper-groceries section a:link {
+    font-size: 1.7rem;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0.4px 0.4px #ffffff;
+    padding: 10px 5px;
+    margin: auto auto 10px;
+    width: 80%;
+    text-align: center;
+    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+#wrapper-groceries section a:hover {
+    box-shadow: inset 50rem 0 0 0 rgb(255, 255, 255);
+    font-weight: 600;
+    color: #008037;
+}
+
+/* ------------------------------------------------------
+ CONTACT PAGE GENERAL STYLING
+ ------------------------------------------------------ */
+
+#wrapper-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/grocery-contact.jpg');
+    color: #ffffff;
+    padding: 3em 1.5em;
+    text-align: center;
+    background-size: 150%;
+    animation: pan-image 15s linear infinite;
+}
+
+#wrapper-contact ul {
+    margin-bottom: 1em;
+}
+
+#wrapper-contact ul li:first-child {
+    font-family: 'Montserrat', 'Lato', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-bottom: 0.5rem;
+}
+
+#wrapper-contact ul li {
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+
+div~h3 {
+    font-family: 'Montserrat', 'Lato', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    background-color: rgba(58, 13, 66, 0.884);
+}
+
+div~h3+p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 1.2rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+    background-color: rgba(58, 13, 66, 0.884);
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+div~img {
+    background-color: #ffffff;
+    width: 33%;
+}
+
+/* ------------------------------------------------------
+ FOOTER STYLING
+ ------------------------------------------------------ */
+
+footer {
+    background-color: #ffffff;
+    color: #008037;
+    padding: 1.5em;
+    text-align: center;
+}
+
+footer ul {
+    margin-bottom: 1em;
+}
+
+footer ul li:first-child {
+    font-family: 'Montserrat', 'Lato', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    font-weight: 600;
+    font-size: 1.6em;
+    margin-bottom: 0.5rem;
+}
+
+footer ul li {
+    font-size: 1.2em;
+    line-height: 1.3;
+}
+
+/* ------------------------------------------------------
+ TABLET + DESKTOP ONLY STYLING > 500 px
+ ------------------------------------------------------ */
+
+@media (min-width: 500px) {
+
+    /* GROCERIES PAGE STYLING */
+
+    #wrapper-groceries {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section:nth-of-type(1) {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+
+    section:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 3 / 6;
+    }
+
+    section:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    section:nth-of-type(6) {
+        grid-column: 2;
+        grid-row: 5 / 7;
+    }
+}
+
+/* ------------------------------------------------------
+ DESKTOP SCREEN ONLY STYLING > 700 px
+ ------------------------------------------------------ */
+
+@media (min-width: 800px) {
+
+    /* GROCERIES PAGE STYLING */
+
+    #wrapper-groceries {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: minmax(150px, auto) minmax(150px, auto);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    section:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 1 / 6;
+    }
+
+    section:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 1 / 4;
+    }
+
+    section:nth-of-type(3) {
+        grid-column: 2;
+        grid-row: 4 / 6;
+    }
+
+    section:nth-of-type(6) {
+        grid-column: 3;
+        grid-row: 3 / 6;
+    }
+
+    /* CONTACT PAGE STYLING */
+
+    #wrapper-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* FOOTER STYLING */
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* ------------------------------------------------------
+ TABLET SCREEN ONLY STYLING < 820 px
+ ------------------------------------------------------ */
+
+@media (max-width: 820px) {
+
+    /* GENERAL LAYOUT STYLING */
+
+    body {
+        width: 80%;
+        max-width: 640px;
+        min-width: 480px;
+        margin: 2em auto 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/cabbage-bg.jpg');
+    }
+
+    address {
+        font-size: 1.2rem;
+    }
+
+    header>h2 {
+        display: none;
+    }
+
+    /* INDEX PAGE STYLING */
+
+    #wrapper-index>#banner {
+        background-image: none;
+        padding: 1.5rem;
+    }
+
+    #wrapper-index #banner>h3 {
+        font-size: 2rem;
+        padding: 3rem;
+        animation: none;
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    #wrapper-index #banner>p {
+        display: none;
+    }
+
+    #wrapper-index section:first-of-type {
+        padding: 1em 1em 3em 1em;
+    }
+
+    #wrapper-index section {
+        padding: 3em 1em;
+    }
+
+    #wrapper-index section h2 {
+        margin-top: 2rem;
+    }
+
+    #wrapper-index section:nth-of-type(odd) {
+        background-image: none;
+    }
+
+    #wrapper-index section:nth-of-type(even) figure {
+        float: initial;
+        margin-left: 0;
+    }
+
+    #wrapper-index section:nth-of-type(odd) figure {
+        float: initial;
+    }
+
+    /* GROCERIES PAGE STYLING */
+
+    #wrapper-groceries {
+        grid-gap: 0;
+    }
+
+    #wrapper-groceries section h3 {
+        font-size: 1.8rem;
+    }
+
+    #wrapper-groceries section h3+p {
+        display: none;
+    }
+
+    #wrapper-groceries section h3+p+p {
+        font-size: 1rem;
+    }
+
+    /* CONTACT PAGE STYLING */
+
+    #wrapper-contact ul li:first-child {
+        font-size: 1.5em;
+    }
+
+    #wrapper-contact ul li {
+        font-size: 1.1em;
+    }
+
+    div~h3 {
+        font-size: 1.5rem;
+        padding-left: 0;
+        padding-bottom: 1.5rem;
+    }
+
+    div~h3+p {
+        display: none;
+    }
+
+    div~img {
+        width: 32.8%;
+    }
+}
+
+/* ------------------------------------------------------
+ MOBILE SCREEN ONLY STYLING < 440 px
+ ------------------------------------------------------ */
+
+
+@media (max-width: 440px) {
+
+    /* GENERAL LAYOUT STYLING */
+
+    address {
+        padding-right: 4em;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    header>img {
+        height: 50%;
+        width: 50%;
+    }
+
+    /* NAVIGATION STYLING */
+
+    nav {
+        padding-left: 0.5rem;
+    }
+
+    nav li {
+        margin-right: 0.5em;
+    }
+
+    /* INDEX PAGE STYLING */
+
+    #wrapper-index>#banner {
+        display: flex;
+        padding: 1rem;
+    }
+
+    #wrapper-index #banner>h3 {
+        padding: 1rem;
+    }
+
+    #wrapper-index section {
+        max-width: 400px;
+    }
+
+    #wrapper-index section h2 {
+        font-size: 2em;
+    }
+
+    /* GROCERIES PAGE STYLING */
+
+    #wrapper-groceries {
+        grid-gap: 0;
+    }
+
+    #wrapper-groceries section:nth-of-type(2) h3,
+    #wrapper-groceries section:nth-of-type(3) h3 {
+        margin-top: 0;
+    }
+
+    #wrapper-groceries section a:link {
+        margin-left: 0;
+    }
+
+    /* CONTACT PAGE STYLING */
+
+    #wrapper-contact {
+        padding: 1rem 0;
+    }
+
+    div~h3+p {
+        display: none;
+    }
+
+    iframe~img {
+        width: 30%;
+    }
+
+    /* FOOTER STYLING */
+
+    footer {
+        padding: 1rem 0;
+        align-self: start;
+    }
+
+}
+
+/* ------------------------------------------------------
+ END OF STYLE.CSS
+ ------------------------------------------------------ */

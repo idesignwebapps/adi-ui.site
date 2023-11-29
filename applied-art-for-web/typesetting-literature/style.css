@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------------------
+ END OF RESET
+ ------------------------------------------------------ */
+
+/* ------------------------------------------------------
+ LAYOUT STYLING
+ ------------------------------------------------------ */
+
+body {
+    width: 80%;
+    max-width: 1280px;
+    min-width: 560px;
+    margin: 2em auto 0;
+    font-family: Manrope, Urbanist, Arial, Helvetica, sans-serif;
+    background-image:
+        radial-gradient(white, rgba(255, 255, 255, 0.08) 2px, transparent 10px),
+        radial-gradient(white, rgba(255, 255, 255, 0.06) 1px, transparent 20px),
+        radial-gradient(white, rgba(255, 255, 255, 0.03) 2px, transparent 40px),
+        radial-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, 0.03) 2px, transparent 15px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 80px, 130px 270px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* ------------------------------------------------------
+ NAVIGATION STYLING
+ ------------------------------------------------------ */
+
+nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    font-family: 'Oswald', Urbanist, Manrope, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 2em;
+    height: 2em;
+    border-bottom: 1px solid #888;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 0 1.5em;
+    transition: .3s background-color;
+}
+
+nav a:hover {
+    background-color: #585858;
+}
+
+/* ------------------------------------------------------
+ CONTENT STYLING
+ ------------------------------------------------------ */
+
+header {
+    margin-top: 2.5em;
+}
+
+h1 {
+    display: inline;
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: Urbanist, Manrope, Arial, Helvetica, sans-serif;
+    color: #00a6ff;
+}
+
+h1+h1 {
+    color: #ffffff;
+}
+
+header+p {
+    margin-top: 1.5em;
+}
+
+header+p::first-letter {
+    float: left;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #61c8ff;
+    padding-right: 2.5px;
+    line-height: 0.9;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: Urbanist, Manrope, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding-top: 0.5em;
+    margin-top: 0.6em;
+    border-top: 1px solid #61c8ff;
+}
+
+h2+p {
+    margin-top: 1.1em;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.55;
+}
+
+p+p {
+    margin-top: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    color: #61c8ff;
+}
+
+p>a {
+    color: #ffffff;
+}
+
+p>a:hover {
+    color: #808080;
+    transition: .3s color;
+}

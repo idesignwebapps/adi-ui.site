@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------------------
+ END OF RESET
+ ------------------------------------------------------ */
+
+/* ------------------------------------------------------
+ LAYOUT STYLING
+ ------------------------------------------------------ */
+
+body {
+    width: 80%;
+    max-width: 1080px;
+    min-width: 480px;
+    margin: 2em auto 0;
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* ------------------------------------------------------
+ NAVIGATION STYLING
+ ------------------------------------------------------ */
+
+nav {
+    background-color: #242424;
+    border-radius: 5px;
+    padding: 1em 1em;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    cursor: pointer;
+    padding: 0.75em;
+    background-color: #d77524;
+    border-radius: 5px;
+}
+
+nav li:hover {
+    background-color: rgba(215, 117, 36, 0.75);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------
+ CONTENT STYLING
+ ------------------------------------------------------ */
+
+header {
+    margin-top: 2em;
+    text-align: center;
+}
+
+h1 {
+    display: inline;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: Urbanist, Arial, Helvetica, sans-serif;
+    color: #ff7300;
+}
+
+h1+h1 {
+    color: #ffffff;
+}
+
+header+p {
+    margin-top: 1.1em;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.55;
+}
+
+p+p {
+    margin-top: 1rem;
+}
+
+#container {
+    margin-top: 2em;
+    background-color: #242424;
+    border-radius: 5px;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+#container ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container li {
+    cursor: pointer;
+    border: 2px solid #ff7300;
+    border-radius: 5px;
+}
+
+#container img:hover {
+    opacity: 70%;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+figcaption {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+footer {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
