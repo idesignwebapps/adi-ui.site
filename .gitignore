@@ -1,1 +1,6 @@
-
+# Ignore all sub-projects listed as independent repositories
+/assets/applied-art-for-web/
+/assets/content-management/
+/assets/design-for-web-content/
+/assets/major-project/
+/assets/social-media-and-seo/
