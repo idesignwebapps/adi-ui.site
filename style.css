@@ -602,7 +602,7 @@ h1>span {
   }
 
   .projects__item:hover .projects__picture::after {
-    opacity: 0.5;
+    opacity: 0.75;
   }
 
   .projects__item:hover .projects__links {
@@ -614,7 +614,7 @@ h1>span {
   }
 
   .projects__item:focus-within .projects__picture::after {
-    opacity: 0.5;
+    opacity: 0.75;
   }
 
   .projects__image {
