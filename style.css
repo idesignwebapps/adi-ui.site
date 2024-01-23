@@ -696,6 +696,10 @@ h1>span {
   margin-block-end: var(--fs-20);
 }
 
+.contact__description {
+  font-size: var(--fs-24);
+}
+
 .contact__description>a {
   text-decoration: underline;
   color: var(--accent);
