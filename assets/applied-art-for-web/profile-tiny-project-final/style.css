@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Profile Page Styling */
+
+/* Layout Styling */
+
+body {
+	background-image: url(./images/background.jpg);
+	width: 80%;
+	max-width: 1200px;
+	min-width: 480px;
+	margin: 4em auto 0;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	background-color: #181818;
+	color: #ffffff;
+}
+
+/* Content Styling */
+
+h1 {
+	display: inline;
+	font-family: Urbanist, "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 7rem;
+	font-weight: 800;
+	color: #020202;
+}
+
+h1+h1 {
+	color: #ffffff;
+}
+
+h1+h2 {
+	font-family: Urbanist, "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 3rem;
+	font-weight: 600;
+	margin-top: 2rem;
+	color: #020202;
+}
+
+h2+section {
+	margin-top: 4rem;
+}
+
+section {
+	padding: 5rem 3rem;
+}
+
+h3 {
+	font-family: Urbanist, "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+section:nth-of-type(1) {
+	background-color: #2d381c;
+}
+
+section:nth-of-type(2) {
+	background-color: #ad6a0c;
+}
+
+section:nth-of-type(3) {
+	background-color: #ca3313;
+}
+
+section:nth-of-type(4) {
+	background-color: #088bac;
+}
+
+section:nth-of-type(5) {
+	background-color: #634f41;
+}
+
+section:nth-of-type(6) {
+	background-color: #746c00;
+}
+
+section:nth-last-of-type(odd) img {
+	height: 30%;
+	width: 30%;
+	float: left;
+	margin-right: 3rem;
+	margin-bottom: 2rem;
+}
+
+section:nth-last-of-type(even) img {
+	height: 30%;
+	width: 30%;
+	float: right;
+	margin-left: 3rem;
+	margin-bottom: 2rem;
+}
+
+h3+p {
+	margin-top: 1rem;
+}
+
+p+p {
+	margin-top: 1rem;
+}
+
+a {
+	margin-left: 8rem;
+}
+
+a>button {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	border: 0px solid transparent;
+	border-radius: 3%;
+	width: 30%;
+	padding: 0.4rem;
+	font-size: 1.2rem;
+	font-weight: 400;
+	cursor: pointer;
+	background-color: #0c0c0c;
+	color: #ffffff;
+}
+
+a>button:hover {
+	opacity: 80%;
+}
+
+span.material-symbols-outlined {
+	margin-right: 0.3rem;
+	margin-bottom: 0.2rem;
+	vertical-align: middle;
+	font-size: 1.5rem;
+}
