@@ -142,10 +142,51 @@ svg {
   margin-inline: auto;
 }
 
+.wrapper-process>h1, .wrapper-process>p {
+  text-align: center;
+}
+
+.wrapper-process>h1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.wrapper-process>p>span {
+  font-weight: 600;
+}
+
+.wrapper-process img {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.wrapper-process img:first-of-type {
+  margin-top: 2rem;
+}
+
 /* 600px */
 @media (min-width: 37.5em) {
   .wrapper {
     width: calc(100% - 3.75rem);
+  }
+
+  .wrapper-process>h1 {
+    font-size: 2rem;
+  }
+
+  .wrapper-process img {
+    width: calc(90% - 1rem);
+  }
+}
+
+@media (min-width: 62.5em) {
+  .wrapper-process>h1 {
+    font-size: 3rem;
+  }
+
+  .wrapper-process img {
+    width: calc(80% - 2rem);
   }
 }
 
