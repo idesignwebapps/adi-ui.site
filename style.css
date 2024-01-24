@@ -321,6 +321,8 @@ h1>span {
 }
 
 .hero__description {
+  font-weight: 300;
+  font-size: var(--fs-18);
   margin-block-end: 24px;
 }
 
@@ -347,7 +349,6 @@ h1>span {
     position: relative;
     width: 42vw;
     max-width: 445px;
-    /* width: 322px; */
     height: auto;
     left: auto;
     right: 0;
@@ -388,7 +389,8 @@ h1>span {
   }
 
   .hero__description {
-    /* width: 70%; */
+    width: 70%;
+    font-weight: 500;
     margin-block-end: 34px;
   }
 }
@@ -469,7 +471,8 @@ h1>span {
 }
 
 .skills__description {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: 300;
   margin-block-end: 0;
 }
 
@@ -490,6 +493,12 @@ h1>span {
 
   .skills__item {
     text-align: left;
+  }
+
+  .skills__description {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-block-end: 0;
   }
 
   .skills__rings {
@@ -698,7 +707,7 @@ h1>span {
 }
 
 .contact__description {
-  font-size: var(--fs-24);
+  font-size: var(--fs-20);
 }
 
 .contact__description>a {
@@ -718,6 +727,10 @@ h1>span {
 }
 
 @media (min-width: 37.5em) {
+  .contact__description {
+    font-size: var(--fs-24);
+  }
+
   .contact__rings {
     bottom: 47px;
     translate: -75%;
