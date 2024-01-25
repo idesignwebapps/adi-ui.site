@@ -177,7 +177,7 @@ svg {
   }
 
   .wrapper-process img {
-    width: calc(90% - 1rem);
+    width: calc(85% - 1rem);
   }
 }
 
@@ -187,7 +187,7 @@ svg {
   }
 
   .wrapper-process img {
-    width: calc(80% - 2rem);
+    width: calc(70% - 2rem);
   }
 }
 
