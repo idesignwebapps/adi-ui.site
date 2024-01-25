@@ -663,10 +663,7 @@ h1>span {
   .timeline__text p>span {
     font-size: 0.8rem;
   }
-
-  .all__timelines::before {
-    top: 32px;
-  }
+  
 }
 
 /* PROJECTS */
