@@ -470,6 +470,10 @@ h1>span {
   margin-block-end: 2px;
 }
 
+.skills__title>span {
+  color: var(--accent);
+}
+
 .skills__description {
   font-size: 1rem;
   font-weight: 300;
