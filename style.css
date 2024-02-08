@@ -130,8 +130,17 @@ svg {
 mark {
   color: var(--bg-body);
   background-color: var(--accent);
-  padding: 0.4rem;
-  font-weight: 600;
+  padding: 0.35rem 0.2rem;
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 37.5em) {
+  mark {
+    padding: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
 
 mark>a {
