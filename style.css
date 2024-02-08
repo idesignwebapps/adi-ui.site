@@ -127,6 +127,23 @@ svg {
   display: block;
 }
 
+mark {
+  color: var(--bg-body);
+  background-color: var(--accent);
+  padding: 0.4rem;
+  font-weight: 600;
+}
+
+mark>a {
+  text-decoration: none;
+  color: var(--bg-body);
+}
+
+mark>a:hover {
+  color: var(--bg-body);
+  text-decoration: underline;
+}
+
 .visually-hidden {
   position: absolute;
   left: -10000px;
