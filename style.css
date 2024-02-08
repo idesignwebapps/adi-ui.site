@@ -127,32 +127,6 @@ svg {
   display: block;
 }
 
-mark {
-  color: var(--bg-body);
-  background-color: var(--accent);
-  padding: 0.35rem 0.2rem;
-  font-weight: 300;
-  font-size: 0.85rem;
-}
-
-@media (min-width: 37.5em) {
-  mark {
-    padding: 0.4rem;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-}
-
-mark>a {
-  text-decoration: none;
-  color: var(--bg-body);
-}
-
-mark>a:hover {
-  color: var(--bg-body);
-  text-decoration: underline;
-}
-
 .visually-hidden {
   position: absolute;
   left: -10000px;
@@ -182,6 +156,24 @@ mark>a:hover {
   font-weight: 600;
 }
 
+.wrapper-process>p:last-of-type>span {
+  color: var(--bg-body);
+  background-color: var(--accent);
+  padding: 0.35rem 0.2rem;
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+
+.wrapper-process>p:last-of-type>span>a {
+  text-decoration: none;
+  color: var(--bg-body);
+}
+
+.wrapper-process>p:last-of-type>span>a:hover {
+  color: var(--bg-body);
+  text-decoration: underline;
+}
+
 .wrapper-process img {
   width: 100%;
   margin-inline: auto;
@@ -199,6 +191,12 @@ mark>a:hover {
 
   .wrapper-process>h1 {
     font-size: var(--fs-32);
+  }
+
+  .wrapper-process>p:last-of-type>span {
+    padding: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   .wrapper-process img {
